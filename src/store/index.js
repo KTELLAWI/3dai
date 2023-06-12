@@ -7,8 +7,8 @@ const state = proxy({
   isFullTexture: false,
   logoDecal: './threejs.png',
   fullDecal: './threejs.png',
-  twoModels:true,
-  isTeaPot:true,
+  twoModels:false,
+  isTeaPot:false,
   //  isShirt:true
 });
 
