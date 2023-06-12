@@ -4,7 +4,7 @@ import { Environment, Center } from '@react-three/drei';
 import Shirt from './Shirt';
 import Backdrop from './Backdrop';
 import CameraRig from './CameraRig';
-import Mug from './mug';
+import Mug from './Mug';
 import { useSnapshot } from 'valtio';
 import state from '../store';
 const CanvasModel = () => {
