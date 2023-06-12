@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - vite
+  workflow_dispatch: # to manually run this workflow
+    
 
 jobs:
   build:
