@@ -60,31 +60,29 @@ const CanvasModel = () => {
   }
   
   return(
-    <div>
-      eeee
-    </div>
-  //   <Canvas
+    
+    <Canvas
    
-  //   shadows
-  //   camera={{ position: [0, 0, 0], fov:snap.isTeaPot ? 5 : 25}}
-  //   gl={{ preserveDrawingBuffer: true }}
-  //   className="w-full max-w-full h-full transition-all ease-in"
-  // >
-  //   <ambientLight intensity={0.5} />
-  //   <Environment preset="city" />
+    shadows
+    camera={{ position: [0, 0, 0], fov:snap.isTeaPot ? 5 : 25}}
+    gl={{ preserveDrawingBuffer: true }}
+    className="w-full max-w-full h-full transition-all ease-in"
+  >
+    <ambientLight intensity={0.5} />
+    <Environment preset="city" />
 
-  //   <CameraRig  model= {snap.isTeaPot ? true : false}>
-  //     <Backdrop />
-  //     <Center>
-  //       {/* {snap.isTeaPot ?
+    <CameraRig  model= {snap.isTeaPot ? true : false}>
+      <Backdrop />
+      <Center>
+        {snap.isTeaPot ?
         
-  //       <Mug/>
-  //       :
-  //       <Shirt/>
-  //       } */}
-  //     </Center>
-  //   </CameraRig>
-  // </Canvas>
+        <Mug/>
+        :
+        <Shirt/>
+        }
+      </Center>
+    </CameraRig>
+  </Canvas>
 
   )
 
