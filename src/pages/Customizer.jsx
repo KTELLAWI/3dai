@@ -126,18 +126,20 @@ const Customizer = () => {
             className="absolute top-0 right-0 z-10"
             {...slideAnimation('left')}
           >
-            <div className="flex items-center min-h-screen">
-              <div className="editortabs-container tabs">
+            <div className="flex flex-col justify-center items-center gap-3 min-h-screen">
+              
                 {EditorTabs.map((tab) => (
+                  <div className="editortabs-container tabs">
                   <Tab2
                     key={tab.name}
                     tab={tab}
                     handleClick={() => setActiveEditorTab(tab.name)}
                   />
+                  </div>
                 ))}
 
                 {generateTabContent()}
-              </div>
+              
             </div>
           </motion.div>
 

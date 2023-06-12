@@ -13,7 +13,7 @@ const Tab2 = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
   return (
     <div
       key={tab.name}
-      className={`tab-btn font-bold font-mono ${isFilterTab ? 'rounded-full glassmorphism' : 'rounded-4'}`}
+      className={`tab-btn bg-blue-200    font-bold font-mono ${isFilterTab ? 'rounded-full glassmorphism' : 'rounded-4'}`}
       onClick={handleClick}
       style={activeStyles}
     >
